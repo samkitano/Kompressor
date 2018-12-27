@@ -1,0 +1,32 @@
+{
+    "name": "samkitano/kompressor",
+    "description": "Basic compression tools for laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sam Kitano",
+            "email": "sam.kitano@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "orchestra/testbench": "^3.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "samkitano\\Kompressor\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "samkitano\\Kompressor\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "samkitano\\Kompressor\\KompressorServiceProvider"
+            ]
+        }
+    }
+}
