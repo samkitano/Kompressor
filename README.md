@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/samkitano/kompressor.svg?branch=master)](https://travis-ci.org/samkitano/Kompressor)
 # An archive utility for Laravel 5.7
 
 Kompressor is a simplified wrapper for PHP archive libraries, such as Zip,
