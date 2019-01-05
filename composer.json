@@ -26,7 +26,10 @@
         "laravel": {
             "providers": [
                 "samkitano\\Kompressor\\KompressorServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "Kompressor": "samkitano\\Kompressor\\Facades\\Kompressor"
+            }
         }
     }
 }

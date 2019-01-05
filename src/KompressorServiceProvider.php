@@ -11,10 +11,8 @@ class KompressorServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if ($this->app->runningInConsole()) {
-            $this->registerPublishing();
-            $this->registerFacades();
-        }
+        $this->registerPublishing();
+        $this->registerFacades();
     }
 
     /**
@@ -42,7 +40,7 @@ class KompressorServiceProvider extends ServiceProvider
      */
     protected function registerFacades()
     {
-        $this->app->singleton('Kompressor', function ($app) {
+        $this->app->singleton('Kompressor', function () {
             return new \samkitano\Kompressor\Kompressor();
         });
     }
